@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --main-color: #FF0055;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #050608;
+    padding: 25px 80px 25px 80px;
+}
+.logo1{
+    background-color: var(--main-color);
+    padding: 6px;
+    border-radius: 2px;
+    width: 34px;
+    margin: 2px;
+    height: 34px;
+}
+.logo1 p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+.flogo{
+    display: flex;
+    flex-direction: row;
+}
+.logo2{
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo2 h2{
+    color: white;
+}
+.logo2 p{
+    color: #606877;
+    font-family: monospace;
+    font-size: 16px;
+}
+.logo2 strong{
+    color: var(--main-color);
+
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+.nav-bar a{
+    text-decoration: none;
+    margin: 0px 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#onas{
+    color:aqua;
+}
