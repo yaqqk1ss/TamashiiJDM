@@ -23,11 +23,18 @@
                 <p>TOKYO DIRECT</p>
             </div>
         </div>
-        <nav class="nav-bar">
-            <a href="#" id="onas">O nás</a>
-            <a href="#">Katalog</a>
-            <a href="#">Hledat podle VIN</a>
-            <a href="#">Aukce</a>
+        <nav class="nav-bar" aria-label="Hlavní navigace">
+            <a href="#onas" id="onas">O nás</a>
+            <div class="dropdown">
+                <a href="#katalog" class="dropdown-toggle">Katalog <span aria-hidden="true">⌄</span></a>
+                <div class="dropdown-menu">
+                    <a href="#produkty">Nejlepší produkty</a>
+                    <a href="#interaktivni">Výběr podle komponentu</a>
+                    <a href="#novinky">JDM novinky</a>
+                </div>
+            </div>
+            <a href="#vin">Hledat podle VIN</a>
+            <a href="#aukce">Aukce</a>
         </nav>
         <div class="nav-icons">
             <button class="icon-btn" aria-label="Search">
@@ -42,7 +49,8 @@
             </button>
         </div>
     </header>
-    <main>
+    <div class="content-layout">
+    <main class="main-content">
         <section class="hero">
             <div>
                 <p class="hero-subtitle">AUTHENTIC JDM SPEC PARTS</p>
@@ -59,7 +67,7 @@
                 </button>
             </div>
         </section>
-        <section class="interactive">
+        <section class="interactive" id="interaktivni">
             <div class="expl">
                 <div>
                     <p>// EXPLORE MECHANICAL SYSTEM</p>
@@ -137,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section class="popular-products">
+        <section class="popular-products" id="produkty">
             <div class="products-header">
 
                 <div class="header-text">
@@ -267,7 +275,7 @@
             </div>
         </section>
 
-        <section class="news-section">
+        <section class="news-section" id="novinky">
             <div class="news-header">
                 <div class="news-title">
                     <p>// EXPRESSWAY JOURNAL & NEWS</p>
@@ -325,62 +333,42 @@
             </div>
         </section>
     </main>
+    <aside class="sidebar" aria-label="Sekundární menu">
+        <h2>Rychlá navigace</h2>
+        <nav aria-label="Sekundární navigace">
+            <a href="#onas">O nás</a>
+            <a href="#interaktivni">Výběr dílů</a>
+            <a href="#produkty">Nejlepší produkty</a>
+            <a href="#novinky">JDM novinky</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+        <p>Originální japonské díly přímo z Tokia.</p>
+    </aside>
+    </div>
 
     <footer class="site-footer">
         <div class="footer-main">
-            <div class="footer-brand">
-                <div class="flogo footer-logo">
-                    <div class="logo1">
-                        <p>魂</p>
-                    </div>
-                    <div class="logo2">
-                        <h2><b>TAMASHII <strong>JDM</strong></b></h2>
-                        <p>TOKYO DIRECT</p>
-                    </div>
-                </div>
-
-                <p class="footer-description">
-                    Originální náhradní díly a tuningové díly s<br>
-                    doručením po celém Rusku, Dovoz z Japonska,<br>
-                    bez zprostředkovatelů.
-                </p>
-
-                <a class="footer-phone" href="tel:+888000888000">+888 000 888 000</a>
-                <a class="footer-email" href="mailto:tokyo@tamashii-jdm.eu">tokyo@tamashii-jdm.eu</a>
-            </div>
-
             <div class="footer-column">
-                <h3>KATALOG DÍLŮ</h3>
-                <a href="#">Motor</a>
-                <a href="#">Převodovka</a>
-                <a href="#">Podvozek</a>
-                <a href="#">Brzdový systém</a>
-                <a href="#">Ladění a styling</a>
+                <h3>Dokumenty</h3>
+                <a href="#dodani">Dodání a platba</a>
+                <a href="#zaruka">Záruka a vrácení</a>
+                <a href="#podminky">Obchodní podmínky</a>
+                <a href="#ochrana">Ochrana osobních údajů</a>
             </div>
-
-            <div class="footer-column">
-                <h3>SLUŽBY A INFORMACE</h3>
-                <a href="#">Objednat s DHL</a>
-                <a href="#">Dodání a platba</a>
-                <a href="#">Výběr podle VIN / čísla karoserie</a>
-                <a href="#">Záruka vrácení peněz</a>
-                <a href="#">O společnosti</a>
+            <div class="footer-column" id="kontakt">
+                <h3>Kontakty</h3>
+                <a href="tel:+888000888000">+888 000 888 000</a>
+                <a href="mailto:tokyo@tamashii-jdm.eu">tokyo@tamashii-jdm.eu</a>
+                <p class="footer-contact-note">TAMASHII JDM · Tokyo Direct<br>Originální díly přímo z Japonska.</p>
             </div>
-
             <div class="footer-column footer-social-column">
-                <h3>JSME NA SOCIÁLNÍCH SÍTÍCH</h3>
-
+                <h3>Sociální sítě</h3>
                 <div class="footer-socials">
-                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (otevře nové okno)"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (otevře nové okno)"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube (otevře nové okno)"><i class="fa-brands fa-youtube"></i></a>
                 </div>
-
-                <p>
-                    Přihlaste se k odběru oznámení o nových<br>
-                    kontejnerech a akcích přímo z Japonska.
-                </p>
+                <p>Sledujte novinky a dění z japonské automobilové scény.</p>
             </div>
         </div>
 
